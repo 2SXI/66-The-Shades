@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>66 The Shades | Self-Catering Apartment, Umhlanga</title>
+<meta name="description" content="66 The Shades — a self-catering holiday apartment in Umhlanga with sea-view balcony, sleeps 4. Close to Umhlanga Main Beach, the Lighthouse and Gateway.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LodgingBusiness",
+  "name": "66 The Shades",
+  "telephone": "+27664221393",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "23 Weaver Crescent",
+    "addressLocality": "Umhlanga, Durban",
+    "addressRegion": "KwaZulu-Natal",
+    "postalCode": "4319",
+    "addressCountry": "ZA"
+  },
+  "numberOfRooms": "2",
+  "amenityFeature": [
+    {"@type": "LocationFeatureSpecification", "name": "Wi-Fi"},
+    {"@type": "LocationFeatureSpecification", "name": "Fully equipped kitchen"},
+    {"@type": "LocationFeatureSpecification", "name": "Secure parking"},
+    {"@type": "LocationFeatureSpecification", "name": "Sea-view balcony"},
+    {"@type": "LocationFeatureSpecification", "name": "Complex swimming pool"},
+    {"@type": "LocationFeatureSpecification", "name": "Washing machine"}
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#211D17;
+    --base:#F4EEE2;
+    --card:#FFFFFF;
+    --ocean:#5B6B4F;
+    --ocean-deep:#3F4A37;
+    --coral:#C1552C;
+    --coral-deep:#9B4120;
+    --line:#E6DCC8;
+    --muted:#6E6657;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'DM Sans',sans-serif;
+    background:var(--base);
+    color:var(--ink);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family:'DM Serif Display',serif;
+    font-weight:400;
+    line-height:1.18;
+    color:var(--ink);
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 24px;}
+  section{padding:92px 0;}
+  @media(max-width:700px){section{padding:58px 0;}}
+
+  /* Keyline divider */
+  .keyline{display:flex;align-items:center;gap:14px;margin:0 0 14px;}
+  .keyline::before{content:"";width:34px;height:2px;background:var(--coral);display:block;}
+  .keyline span{font-size:12.5px;letter-spacing:1.6px;text-transform:uppercase;color:var(--ocean-deep);font-weight:700;}
+
+  /* Buttons */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:9px;
+    padding:15px 28px;border-radius:4px;font-weight:600;font-size:14.5px;
+    font-family:'DM Sans',sans-serif;
+    border:1.5px solid transparent;cursor:pointer;transition:all .2s ease;
+  }
+  .btn:hover{transform:translateY(-2px);}
+  .btn-coral{background:var(--coral);color:#fff;}
+  .btn-coral:hover{background:var(--coral-deep);}
+  .btn-outline{background:transparent;border-color:rgba(255,255,255,0.55);color:#fff;}
+  .btn-outline:hover{border-color:#fff;background:rgba(255,255,255,0.1);}
+  .btn-outline-dark{background:transparent;border-color:var(--ink);color:var(--ink);}
+  .btn-outline-dark:hover{background:var(--ink);color:#fff;}
+
+  /* Header */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(247,243,234,0.93);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:17px 0;}
+  .logo{font-family:'DM Serif Display',serif;font-size:21px;}
+  .logo span{color:var(--coral);font-style:italic;}
+  .nav-links{display:flex;align-items:center;gap:32px;}
+  .nav-links a{font-weight:500;font-size:14px;color:var(--muted);}
+  .nav-links a:hover{color:var(--ink);}
+  .nav-cta{display:flex;align-items:center;gap:14px;}
+  .nav-cta .btn{padding:11px 20px;font-size:13px;}
+  .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;}
+  .burger span{width:24px;height:2.5px;background:var(--ink);border-radius:2px;}
+
+  @media(max-width:900px){
+    .nav-links{display:none;}
+    .burger{display:flex;}
+    .nav.open .nav-links{
+      display:flex;flex-direction:column;align-items:flex-start;gap:18px;
+      position:absolute;top:64px;left:0;right:0;background:var(--base);
+      padding:24px;border-bottom:1px solid var(--line);
+    }
+  }
+
+  /* Hero */
+  .hero{position:relative;padding:0;}
+  .hero-bg{position:relative;height:640px;overflow:hidden;}
+  .hero-bg img{width:100%;height:100%;object-fit:cover;}
+  .hero-bg::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(90deg, rgba(33,29,23,0.84) 18%, rgba(33,29,23,0.45) 55%, rgba(33,29,23,0.1) 100%);
+  }
+  .hero-content{position:absolute;inset:0;display:flex;align-items:center;z-index:2;}
+  .hero-content .wrap{width:100%;}
+  .hero-inner{max-width:600px;}
+  .hero-badges{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px;}
+  .hero-badge{
+    display:inline-flex;align-items:center;gap:8px;
+    background:rgba(255,255,255,0.14);border:1px solid rgba(255,255,255,0.3);
+    color:#fff;padding:8px 16px;border-radius:999px;
+    font-size:12.5px;font-weight:600;letter-spacing:0.2px;
+    backdrop-filter:blur(4px);
+  }
+  .hero h1{font-size:52px;font-weight:400;letter-spacing:-0.5px;margin-bottom:20px;color:#fff;}
+  .hero h1 em{color:var(--coral);font-style:italic;}
+  @media(max-width:600px){.hero h1{font-size:36px;}}
+  .hero p.lede{font-size:17px;color:#E4E6DF;max-width:480px;margin-bottom:34px;}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:14px;}
+  @media(max-width:700px){.hero-bg{height:560px;}}
+
+  /* Stat bar */
+  .stat-bar{background:var(--ink);padding:0;}
+  .stat-grid{display:grid;grid-template-columns:repeat(4,1fr);}
+  @media(max-width:800px){.stat-grid{grid-template-columns:1fr 1fr;}}
+  .stat-cell{padding:30px 24px;text-align:center;border-right:1px solid rgba(255,255,255,0.1);}
+  .stat-cell:last-child{border-right:none;}
+  @media(max-width:800px){.stat-cell:nth-child(2n){border-right:none;}
+    .stat-cell{border-bottom:1px solid rgba(255,255,255,0.1);}
+    .stat-cell:nth-last-child(-n+2){border-bottom:none;}}
+  .stat-cell .big{font-family:'DM Serif Display',serif;font-size:24px;color:var(--coral);margin-bottom:4px;}
+  .stat-cell .lbl{font-size:11.5px;color:#C9C2AD;text-transform:uppercase;letter-spacing:0.6px;font-weight:600;}
+
+  /* Section head */
+  .section-head{max-width:600px;margin-bottom:50px;}
+  .section-head.center{margin-left:auto;margin-right:auto;text-align:center;}
+  .section-head.center .keyline{justify-content:center;}
+  .section-head.center .keyline::before{display:none;}
+  .eyebrow{
+    font-size:12.5px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;
+    color:var(--ocean-deep);margin-bottom:12px;display:block;
+  }
+  .section-head h2{font-size:34px;font-weight:400;letter-spacing:-0.3px;margin-bottom:14px;}
+  .section-head p{color:var(--muted);font-size:16px;}
+
+  /* Rooms */
+  .room-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  @media(max-width:860px){.room-grid{grid-template-columns:1fr;}}
+  .room-card{background:var(--card);border:1px solid var(--line);border-radius:4px;overflow:hidden;}
+  .room-media{height:220px;overflow:hidden;}
+  .room-media img{width:100%;height:100%;object-fit:cover;transition:transform .5s;}
+  .room-card:hover .room-media img{transform:scale(1.05);}
+  .room-body{padding:22px 24px 26px;}
+  .room-body h3{font-size:20px;margin-bottom:8px;}
+  .room-body p{font-size:14.5px;color:var(--muted);}
+
+  /* About / grid */
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+  @media(max-width:860px){.about-grid{grid-template-columns:1fr;gap:32px;}}
+  .about-grid img{border-radius:4px;height:420px;object-fit:cover;}
+  @media(max-width:860px){.about-grid img{height:300px;}}
+  .about-text p{color:var(--muted);margin-bottom:16px;font-size:15.5px;}
+
+  .facts-row{display:flex;flex-wrap:wrap;gap:24px;margin-top:24px;}
+  .fact{display:flex;align-items:center;gap:10px;}
+  .fact .ico{display:flex;color:var(--coral-deep);}
+  .fact .ico svg{width:19px;height:19px;}
+  .fact .v{font-size:14px;font-weight:600;color:var(--ink);}
+
+  /* Amenities */
+  .amen-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+  @media(max-width:800px){.amen-grid{grid-template-columns:1fr 1fr;}}
+  .amen-card{
+    background:var(--card);border:1px solid var(--line);border-radius:4px;padding:26px 20px;
+    text-align:center;
+  }
+  .amen-card .ico{
+    width:46px;height:46px;border-radius:50%;background:#F2E6D6;color:var(--coral-deep);
+    display:flex;align-items:center;justify-content:center;margin:0 auto 14px;
+  }
+  .amen-card .ico svg{width:21px;height:21px;}
+  .amen-card .name{font-size:13.5px;font-weight:600;color:var(--ink);}
+
+  .note{
+    margin-top:32px;background:#FBF6EC;border:1px solid #EFE1C8;
+    border-radius:4px;padding:18px 22px;font-size:13.5px;color:#7A5C33;
+    border-left:3px solid var(--coral);
+  }
+
+  /* Guests */
+  .guest-grid{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);background:var(--card);}
+  @media(max-width:800px){.guest-grid{grid-template-columns:1fr 1fr;}}
+  .guest-card{padding:30px 20px;text-align:center;border-right:1px solid var(--line);}
+  .guest-grid .guest-card:last-child{border-right:none;}
+  @media(max-width:800px){.guest-card{border-bottom:1px solid var(--line);}
+    .guest-card:nth-child(2n){border-right:none;}}
+  .guest-card .mark{font-family:'DM Serif Display',serif;font-size:26px;color:var(--coral);margin-bottom:8px;}
+  .guest-card h4{font-size:14.5px;font-weight:500;font-family:'DM Sans',sans-serif;}
+
+  /* Gallery */
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  @media(max-width:800px){.gallery{grid-template-columns:1fr 1fr;}}
+  @media(max-width:500px){.gallery{grid-template-columns:1fr;}}
+  .gallery figure{border-radius:4px;overflow:hidden;position:relative;height:230px;}
+  .gallery img{width:100%;height:100%;object-fit:cover;}
+  .gallery figcaption{
+    position:absolute;bottom:0;left:0;right:0;
+    background:linear-gradient(0deg, rgba(21,50,61,0.85), transparent);
+    color:#fff;padding:16px 18px 14px;font-size:14px;font-family:'DM Serif Display',serif;
+  }
+
+  /* Location feature */
+  .location-band{background:var(--ocean);color:#fff;overflow:hidden;}
+  .loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;}
+  @media(max-width:860px){.loc-grid{grid-template-columns:1fr;gap:32px;}}
+  .location-band .eyebrow{color:#DCE3CC;}
+  .location-band h2{color:#fff;font-size:34px;margin-bottom:10px;}
+  .loc-list{display:flex;flex-direction:column;gap:14px;margin-top:22px;}
+  .loc-item{display:flex;align-items:center;gap:14px;}
+  .loc-item .dot{width:8px;height:8px;border-radius:50%;background:var(--coral);flex-shrink:0;}
+  .loc-item .name{font-weight:600;font-size:15px;}
+  .loc-img{border-radius:4px;overflow:hidden;height:380px;}
+  .loc-img img{width:100%;height:100%;object-fit:cover;}
+  @media(max-width:860px){.loc-img{height:260px;}}
+
+  /* Booking */
+  .booking{background:var(--ink);color:#fff;}
+  .booking .eyebrow{color:#CBBFA0;}
+  .booking .keyline::before{background:var(--coral);}
+  .booking .keyline span{color:#C3E3E8;}
+  .booking .section-head h2{color:#fff;}
+  .booking .section-head p{color:#B9C6C5;}
+  .booking-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:52px;align-items:flex-start;}
+  @media(max-width:860px){.booking-grid{grid-template-columns:1fr;gap:34px;}}
+  .booking-info p.intro{color:#B9C6C5;font-size:15px;margin-bottom:10px;}
+  .info-line{display:flex;gap:14px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,0.12);}
+  .info-line:last-of-type{border-bottom:none;}
+  .info-line .ico{
+    width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.1);color:#fff;
+    display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  }
+  .info-line .ico svg{width:17px;height:17px;}
+  .info-line .txt .t1{font-size:11.5px;color:#9FB0AE;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;}
+  .info-line .txt .t2{font-size:15.5px;font-weight:600;color:#fff;}
+  .directions{margin-top:16px;display:inline-block;font-size:13.5px;font-weight:700;color:var(--coral);letter-spacing:0.2px;}
+  .directions:hover{text-decoration:underline;}
+
+  .ask-note{
+    margin-top:20px;font-size:13px;color:#B9C6C5;border-left:3px solid var(--coral);
+    padding:12px 16px;background:rgba(255,255,255,0.05);border-radius:4px;
+  }
+
+  .booking-form{background:var(--base);color:var(--ink);padding:32px;border-radius:6px;}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;}
+  @media(max-width:500px){.form-row{grid-template-columns:1fr;}}
+  .form-group{display:flex;flex-direction:column;gap:6px;margin-bottom:14px;}
+  .form-group label{font-size:11.5px;text-transform:uppercase;letter-spacing:0.5px;color:var(--muted);font-weight:600;}
+  .form-group input, .form-group textarea{
+    border:1px solid var(--line);padding:12px 14px;font-family:'DM Sans',sans-serif;font-size:14px;
+    border-radius:4px;background:#fff;color:var(--ink);
+  }
+  .form-group input:focus, .form-group textarea:focus{outline:2px solid var(--ocean);outline-offset:1px;}
+  .guest-stepper{display:flex;align-items:center;gap:14px;border:1px solid var(--line);padding:9px 14px;border-radius:4px;width:fit-content;background:#fff;}
+  .guest-stepper button{
+    width:26px;height:26px;border-radius:50%;border:1px solid var(--ink);background:#fff;cursor:pointer;font-size:15px;line-height:1;
+  }
+  .guest-stepper span{min-width:64px;text-align:center;font-size:14px;font-weight:600;}
+  .booking-form button[type="submit"]{
+    width:100%;margin-top:4px;padding:15px;background:var(--coral);color:#fff;border:none;
+    font-weight:700;font-size:13.5px;letter-spacing:0.4px;text-transform:uppercase;border-radius:4px;cursor:pointer;
+  }
+  .booking-form button[type="submit"]:hover{background:var(--coral-deep);}
+
+  /* CTA band */
+  .cta-band{position:relative;background:var(--ink);color:#fff;text-align:center;overflow:hidden;}
+  .cta-band::before{
+    content:"";position:absolute;inset:0;
+    background:url('https://images.unsplash.com/photo-1721369483526-62f48a00b949?auto=format&fit=crop&w=1600&q=60') center/cover;
+    opacity:0.18;
+  }
+  .cta-band .wrap{position:relative;z-index:1;}
+  .cta-band h2{font-size:32px;margin-bottom:16px;color:#fff;}
+  .cta-band p{color:#D8E0DD;max-width:480px;margin:0 auto 32px;font-size:15.5px;}
+  .cta-actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;}
+
+  /* Footer */
+  footer{padding:36px 0;border-top:1px solid var(--line);}
+  .footer-row{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+  .footer-row p{font-size:13px;color:var(--muted);}
+
+  /* Mobile sticky bar */
+  .m-bar{
+    display:none;position:fixed;bottom:0;left:0;right:0;z-index:60;
+    background:#fff;border-top:1px solid var(--line);
+    padding:10px 14px;gap:10px;
+    box-shadow:0 -8px 24px rgba(21,50,61,0.12);
+  }
+  .m-bar .btn{flex:1;padding:12px;font-size:13.5px;}
+  @media(max-width:700px){
+    .m-bar{display:flex;}
+    body{padding-bottom:70px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav class="nav" id="nav">
+      <a href="#top" class="logo">66 <span>The Shades</span></a>
+      <div class="nav-links">
+        <a href="#rooms">The Apartment</a>
+        <a href="#amenities">Amenities</a>
+        <a href="#location">Location</a>
+        <a href="#booking">Enquire</a>
+      </div>
+      <div class="nav-cta">
+        <a class="btn btn-coral" href="#booking">Check availability</a>
+        <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1702830499141-a0634d87d6af?auto=format&fit=crop&w=1600&q=80" alt="Apartment balcony overlooking the ocean">
+      <div class="hero-content">
+        <div class="wrap">
+          <div class="hero-inner">
+            <div class="hero-badges">
+              <span class="hero-badge">Umhlanga, Durban</span>
+              <span class="hero-badge">4 Guests · 2 Bedrooms</span>
+              <span class="hero-badge">Self-catering apartment</span>
+            </div>
+            <h1>Sea views, <em>steps from the beach.</em></h1>
+            <p class="lede">66 The Shades is a self-catering holiday apartment in Umhlanga, sleeping up to 4, with a sea-view balcony and everything you need for a relaxed stay.</p>
+            <div class="hero-actions">
+              <a class="btn btn-coral" href="#booking">Check availability</a>
+              <a class="btn btn-outline" href="#rooms">See the apartment</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAT BAR -->
+  <div class="stat-bar">
+    <div class="wrap stat-grid">
+      <div class="stat-cell"><div class="big">Sleeps 4</div><div class="lbl">2 Bedrooms</div></div>
+      <div class="stat-cell"><div class="big">Sea View</div><div class="lbl">Private Balcony</div></div>
+      <div class="stat-cell"><div class="big">Umhlanga</div><div class="lbl">Weaver Crescent</div></div>
+      <div class="stat-cell"><div class="big">Self-Catering</div><div class="lbl">Full Kitchen</div></div>
+    </div>
+  </div>
+
+  <!-- ROOMS -->
+  <section id="rooms">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="keyline"><span>The apartment</span></div>
+        <h2>A relaxed stay, room by room</h2>
+        <p>Everything you'd need for a few nights by the coast — a proper kitchen, comfortable living space, and a sea-view balcony to come back to.</p>
+      </div>
+      <div class="room-grid">
+        <div class="room-card">
+          <div class="room-media"><img src="https://images.unsplash.com/photo-1785934451738-cc993993bb52?auto=format&fit=crop&w=800&q=80" alt="Open-plan living room and kitchen"></div>
+          <div class="room-body">
+            <h3>Living &amp; Kitchen</h3>
+            <p>An open-plan lounge with TV, and a fully equipped kitchen for self-catering — no need to eat out for every meal.</p>
+          </div>
+        </div>
+        <div class="room-card">
+          <div class="room-media"><img src="https://images.unsplash.com/photo-1721369483526-62f48a00b949?auto=format&fit=crop&w=800&q=80" alt="Bedroom with a view of the ocean"></div>
+          <div class="room-body">
+            <h3>Two Bedrooms</h3>
+            <p>A queen bed in one room and two single beds in the other — comfortably sleeping up to 4 guests.</p>
+          </div>
+        </div>
+        <div class="room-card">
+          <div class="room-media"><img src="https://images.unsplash.com/photo-1689717887631-088197cdc2ca?auto=format&fit=crop&w=800&q=80" alt="Balcony with table and chairs overlooking the ocean"></div>
+          <div class="room-body">
+            <h3>Sea-View Balcony</h3>
+            <p>Your own private balcony looking out over the ocean — the spot for a morning coffee or an evening wind-down.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AMENITIES -->
+  <section id="amenities" style="padding-top:0;">
+    <div class="wrap">
+      <div class="section-head center">
+        <div class="keyline"><span>What's included</span></div>
+        <h2>Everything you need, close to the beach</h2>
+      </div>
+      <div class="amen-grid">
+        <div class="amen-card"><div class="ico">🍳</div><div class="name">Fully Equipped Kitchen</div></div>
+        <div class="amen-card"><div class="ico">📺</div><div class="name">Lounge &amp; TV</div></div>
+        <div class="amen-card"><div class="ico">🧺</div><div class="name">Washing Machine</div></div>
+        <div class="amen-card"><div class="ico">🌊</div><div class="name">Sea-View Balcony</div></div>
+        <div class="amen-card"><div class="ico">📶</div><div class="name">Wi-Fi</div></div>
+        <div class="amen-card"><div class="ico">🚗</div><div class="name">Secure Parking</div></div>
+        <div class="amen-card"><div class="ico">🏊</div><div class="name">Complex Swimming Pool</div></div>
+        <div class="amen-card"><div class="ico">🛌</div><div class="name">Queen + 2 Single Beds</div></div>
+      </div>
+      <div class="note">The photos on this page are stock images standing in for real apartment photos — swap them for your own before this goes live. Nightly rates, exact bathroom count, and a few other details differ across listing platforms, so we've left those off here — please confirm current pricing and availability directly before booking.</div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section>
+    <div class="wrap about-grid">
+      <img src="https://images.unsplash.com/photo-1785962019614-ad3166482c9f?auto=format&fit=crop&w=900&q=80" alt="Bright apartment living space with large windows and balcony">
+      <div class="about-text">
+        <span class="eyebrow">About the stay</span>
+        <h2>Not a hotel room — a home for your stay</h2>
+        <p>66 The Shades is a self-catering apartment rather than a hotel room: your own kitchen, your own living space, and the privacy of a private balcony with sea views.</p>
+        <p>It sits on Weaver Crescent in Umhlanga — walking distance to the beach, and close to the Lighthouse, Gateway and Oceans Mall.</p>
+        <div class="facts-row">
+          <div class="fact"><span class="ico">🛏️</span><span class="v">2 Bedrooms</span></div>
+          <div class="fact"><span class="ico">🚿</span><span class="v">Bathroom(s) — confirm with owner</span></div>
+          <div class="fact"><span class="ico">👥</span><span class="v">Up to 4 Guests</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GUESTS -->
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <div class="section-head center">
+        <div class="keyline"><span>Who stays here</span></div>
+        <h2>A fit for most beach trips</h2>
+      </div>
+      <div class="guest-grid">
+        <div class="guest-card"><div class="mark">I</div><h4>Couples</h4></div>
+        <div class="guest-card"><div class="mark">II</div><h4>Small Families</h4></div>
+        <div class="guest-card"><div class="mark">III</div><h4>Groups of Friends</h4></div>
+        <div class="guest-card"><div class="mark">IV</div><h4>Beach Getaways</h4></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <div class="gallery">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1721369483526-62f48a00b949?auto=format&fit=crop&w=700&q=80" alt="Bedroom with a view of the ocean">
+          <figcaption>Sea-view bedroom</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1689717887631-088197cdc2ca?auto=format&fit=crop&w=700&q=80" alt="Balcony with table and chairs overlooking the ocean">
+          <figcaption>The balcony</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1785934451738-cc993993bb52?auto=format&fit=crop&w=700&q=80" alt="Open-plan living room and kitchen">
+          <figcaption>Living &amp; kitchen area</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="location-band" id="location">
+    <div class="wrap loc-grid">
+      <div>
+        <span class="eyebrow">Where you'll be</span>
+        <h2>Right in the heart of Umhlanga</h2>
+        <p style="color:#E3E8D5;">23 Weaver Crescent, Umhlanga — walking distance to the beach, and a short drive from everything else.</p>
+        <div class="loc-list">
+          <div class="loc-item"><span class="dot"></span><span class="name">Umhlanga Main Beach</span></div>
+          <div class="loc-item"><span class="dot"></span><span class="name">Umhlanga Lighthouse</span></div>
+          <div class="loc-item"><span class="dot"></span><span class="name">Gateway Theatre of Shopping</span></div>
+          <div class="loc-item"><span class="dot"></span><span class="name">Oceans Mall</span></div>
+        </div>
+      </div>
+      <div class="loc-img">
+        <img src="https://images.unsplash.com/photo-1621151795312-33ca2f0d0f33?auto=format&fit=crop&w=900&q=80" alt="Coastal lighthouse on the beach">
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="booking" id="booking">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="keyline"><span>Book your stay</span></div>
+        <h2>Get in touch to confirm your dates</h2>
+        <p>Message us directly on WhatsApp, or send your details below and we'll confirm availability.</p>
+      </div>
+      <div class="booking-grid">
+        <div class="booking-info">
+          <p class="intro">The fastest way to check availability and current rates is a direct message.</p>
+          <div class="info-line">
+            <div class="ico">📍</div>
+            <div class="txt">
+              <div class="t1">Address</div>
+              <div class="t2">23 Weaver Crescent, Umhlanga, Durban, KwaZulu-Natal, 4319</div>
+            </div>
+          </div>
+          <div class="info-line">
+            <div class="ico">📞</div>
+            <div class="txt">
+              <div class="t1">Phone</div>
+              <a class="t2" href="tel:+27664221393">066 422 1393</a>
+            </div>
+          </div>
+          <div class="info-line">
+            <div class="ico">👥</div>
+            <div class="txt">
+              <div class="t1">Max guests</div>
+              <div class="t2">4 (2 bedrooms)</div>
+            </div>
+          </div>
+          <a class="directions" href="https://www.google.com/maps/search/?api=1&query=23+Weaver+Crescent+Umhlanga+Durban" target="_blank" rel="noopener">Get directions →</a>
+          <div class="ask-note">Rates and exact bathroom count aren't confirmed yet — please check these directly when you enquire.</div>
+        </div>
+        <form class="booking-form" id="booking-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="checkin">Check-in</label>
+              <input type="date" id="checkin" name="checkin" required>
+            </div>
+            <div class="form-group">
+              <label for="checkout">Check-out</label>
+              <input type="date" id="checkout" name="checkout" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Guests</label>
+            <div class="guest-stepper">
+              <button type="button" id="guest-minus" aria-label="Decrease guests">−</button>
+              <span id="guest-count">2 guests</span>
+              <button type="button" id="guest-plus" aria-label="Increase guests">+</button>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="notes">Notes (optional)</label>
+            <textarea id="notes" name="notes" rows="3"></textarea>
+          </div>
+          <button type="submit">Send via WhatsApp</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <div class="wrap">
+      <h2>Ready for sea views?</h2>
+      <p>Message us to check availability and current rates for your dates.</p>
+      <div class="cta-actions">
+        <a class="btn btn-coral" href="https://wa.me/27664221393?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20booking%2066%20The%20Shades%20in%20Umhlanga." target="_blank" rel="noopener">Enquire on WhatsApp</a>
+        <a class="btn btn-outline" href="tel:+27664221393">Call 066 422 1393</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <p>&copy; <span id="year"></span> 66 The Shades, Umhlanga</p>
+    <p>Site by SXI Digital</p>
+  </div>
+</footer>
+
+<!-- Mobile sticky action bar -->
+<div class="m-bar">
+  <a class="btn btn-coral" href="https://wa.me/27664221393?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20booking%2066%20The%20Shades%20in%20Umhlanga." target="_blank" rel="noopener">WhatsApp</a>
+  <a class="btn btn-outline-dark" href="tel:+27664221393">Call</a>
+</div>
+
+<script>
+  var burger = document.getElementById('burger');
+  var nav = document.getElementById('nav');
+  burger.addEventListener('click', function(){
+    var isOpen = nav.classList.toggle('open');
+    burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Default check-in/check-out minimum to today
+  (function(){
+    var checkin = document.getElementById('checkin');
+    var checkout = document.getElementById('checkout');
+    var todayStr = new Date().toISOString().split('T')[0];
+    checkin.min = todayStr;
+    checkout.min = todayStr;
+    checkin.addEventListener('change', function(){
+      checkout.min = checkin.value;
+    });
+  })();
+
+  // Guest stepper (max 4, matching stated capacity) + booking form -> WhatsApp
+  (function(){
+    var guests = 2;
+    var display = document.getElementById('guest-count');
+    var minus = document.getElementById('guest-minus');
+    var plus = document.getElementById('guest-plus');
+    function render(){
+      display.textContent = guests + (guests === 1 ? ' guest' : ' guests');
+    }
+    minus.addEventListener('click', function(){
+      if (guests > 1) { guests--; render(); }
+    });
+    plus.addEventListener('click', function(){
+      if (guests < 4) { guests++; render(); }
+    });
+    render();
+
+    var form = document.getElementById('booking-form');
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var name = document.getElementById('name').value.trim();
+      var phone = document.getElementById('phone').value.trim();
+      var checkin = document.getElementById('checkin').value;
+      var checkout = document.getElementById('checkout').value;
+      var notes = document.getElementById('notes').value.trim();
+
+      if (!name || !phone || !checkin || !checkout) {
+        alert('Please fill in your name, phone, and both dates.');
+        return;
+      }
+
+      var lines = [
+        "Hi, I'd like to check availability at 66 The Shades:",
+        "Name: " + name,
+        "Phone: " + phone,
+        "Check-in: " + checkin,
+        "Check-out: " + checkout,
+        "Guests: " + guests
+      ];
+      if (notes) lines.push("Notes: " + notes);
+
+      var message = encodeURIComponent(lines.join('\n'));
+      window.open("https://wa.me/27664221393?text=" + message, '_blank', 'noopener');
+    });
+  })();
+</script>
+
+</body>
+</html>
